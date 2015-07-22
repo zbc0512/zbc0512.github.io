@@ -1,21 +1,21 @@
 markdown: redcarpet
 permalink: /:categories/:title.html
-url: 
+url:
 lsi: false
 pygments: true
 safe: true
-auto: false 
+auto: false
 
 paginate: 8
 paginate_path: "page:num"
 
 # presonal config
-domain: www.panxw.com
-title: Panxw's Blog
+domain: blog.zbc7.com
+title: zbc's Blog
 description: Android, Cocos2d, Java Web, Linux, reading...
-author: Steven Pan
-email: winfirm#163.com
-github: panxw
+author: zbc
+email: zbc0512@163.com
+github: zbcblog
 
 config:
   js_dir:
