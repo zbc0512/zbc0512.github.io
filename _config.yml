@@ -11,8 +11,8 @@ paginate_path: "page:num"
 
 # presonal config
 domain: blog.zbc7.com
-title: zbc's Blog
-description: Android, Cocos2d, Java Web, Linux, reading...
+title: 百成's Blog
+description: 欢迎来到百成的技术分享世界……
 author: zbc
 email: zbc0512@163.com
 github: zbcblog

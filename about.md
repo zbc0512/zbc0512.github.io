@@ -3,7 +3,8 @@ layout: default
 title: "关于：About"
 ---
 ####Basic Info
-My name is Zhang Baicheng, A software developer on Android and Linux platform, I'm living in Beijing.  
+我是百成，这是我的技术博客，欢迎大家与我讨论技术相关的话题……  
 
 ####Links
 GitHub: <https://github.com/{{ site.github }}>  
+E-mail: <https://zbc0512@163.com>  
