@@ -7,4 +7,4 @@ title: "关于：About"
 
 ####Links
 GitHub: <https://github.com/{{ site.github }}>  
-E-mail: <https://zbc0512@163.com>  
+E-mail: <http://zbc0512@163.com>  
