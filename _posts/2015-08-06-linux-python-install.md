@@ -10,6 +10,7 @@ Linux下一般都有预装Python，但是版本都较低，有时需要安装相
 ####下载
 首先，需要到官网下载所需要的Python版本：<https://www.python.org/downloads>  
 也可以执行如下命令直接下载，这里以Python-3.4.3.tgz为例：  
+
     wget https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tgz  
 
 ####解压：  
