@@ -8,12 +8,12 @@ tags: ["Linux,Python"]
 Linux下一般都有预装Python，但是版本都较低，有时需要安装相对较高的版本。  
 
 ####下载
-首先，需要到官网下载所需要的Python版本：<https://www.python.org/downloads>,这里我下载的是：Python-3.4.3.tgz  
+首先，需要到官网下载所需要的Python版本：<https://www.python.org/downloads>，这里我下载的是：Python-3.4.3.tgz  
 
 ####安装
 解压：  
 
-  tar -xzvf Python-3.4.3.tgz  
+    tar -xzvf Python-3.4.3.tgz  
 
 编译&安装：  
   在编译前先在/usr/local建一个文件夹python3（作为python的安装路径，以免覆盖老的版本）：  
