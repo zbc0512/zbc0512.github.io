@@ -2,7 +2,7 @@
 layout: post
 category: "Python"
 title: "Linux下Python安装"
-tags: ["Linux,Python"]
+tags: ["Linux", "Python"]
 ---
 
 Linux下一般都有预装Python，但是版本都较低，有时需要安装相对较高的版本。  
