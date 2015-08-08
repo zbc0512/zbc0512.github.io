@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "Python"
+category: "python"
 title: "Linux中Python3.4.3下pip不好使"
 tags: ["Linux", "Python"]
 ---

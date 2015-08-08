@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "Python"
+category: "python"
 title: "Linux下Python安装"
 tags: ["Linux", "Python"]
 ---

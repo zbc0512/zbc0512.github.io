@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "Others"
+category: "others"
 title: "颈椎病自我运动治疗"
 tags: "颈椎"
 ---
