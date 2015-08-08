@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "android"
+category: "git"
 title:  "git分支开发、合并、删除等主要命令"
 tags: [git]
 ---
