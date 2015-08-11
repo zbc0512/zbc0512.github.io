@@ -9,7 +9,7 @@ tags: "Linux"
 1. 源码安装，优点是安装包比较小，只有十多M，缺点是安装依赖的库多，安装编译时间长，安装步骤复杂容易出错；  
 2. 使用官方编译好的二进制文件安装，优点是安装速度快，安装步骤简单，缺点是安装包很大，300M左右。以下介绍linux使用官方编译好的二进制包安装mysql。  
 
-####一、准备工作：
+###一、准备工作：
 下载官方编译好的二进制包并解压：  
 
     wget ftp://ftp.jaist.ac.jp/pub/mysql/Downloads/MySQL-6.0/mysql-6.0.11-alpha-linux-x86_64-glibc23.tar.gz  
@@ -24,7 +24,7 @@ tags: "Linux"
     cp mysql-6.0.11-alpha-linux-x86_64-glibc23 /usr/local/  
     ln -s mysql-6.0.11-alpha-linux-x86_64-glibc23 mysql  
 
-####二、用户和组：
+###二、用户和组：
 添加系统mysql组和mysql用户：  
 
     groupadd mysql  
@@ -39,7 +39,7 @@ tags: "Linux"
     chgrp -R mysql .  
     chown -R mysql:mysql .  
 
-####三、开始安装：
+###三、开始安装：
 安装数据库：
 
     scripts/mysql_install_db --user=mysql --basedir=/opt/mysql/mysql --datadir=/data/mysqldb  
@@ -49,7 +49,7 @@ tags: "Linux"
     chown -R root .  
     chown -R mysql data  
 
-####四、开机启动：
+###四、开机启动：
 复制mysql配置文件：
 
     cp support-files/my-medium.cnf /etc/my.cnf  
@@ -72,7 +72,7 @@ tags: "Linux"
     //显示如下：  
     tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      27628/mysql  
     unix  2      [ ACC ]     STREAM     LISTENING     204207 27628/mysqld        /tmp/mysql.sock  
-####四、其他配置：
+###五、其他配置：
 将/usr/local/mysql/bin/mysql加入环境变量中，在/etc/profile最后加入两行命令：
 
     MYSQL_HOME=/usr/local/mysql  
@@ -82,7 +82,7 @@ tags: "Linux"
 
     /usr/local/mysql/bin/mysqladmin -u root password '密码'  
 
-####五、参考链接：
+###六、参考链接：
 <http://jingyan.baidu.com/article/a378c9609eb652b3282830fd.html>  
 <http://blog.csdn.net/wendi_0506/article/details/39478369>  
 <http://blog.csdn.net/superchanon/article/details/8546254>  
