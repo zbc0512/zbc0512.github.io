@@ -8,6 +8,7 @@ tags: "Linux"
 ####linux安装mysql服务分两种安装方法：
 1. 源码安装，优点是安装包比较小，只有十多M，缺点是安装依赖的库多，安装编译时间长，安装步骤复杂容易出错；  
 2. 使用官方编译好的二进制文件安装，优点是安装速度快，安装步骤简单，缺点是安装包很大，300M左右。以下介绍linux使用官方编译好的二进制包安装mysql。  
+MySQL mirrors地址：http://dev.mysql.com/downloads/mirrors.html  
 
 ###一、准备工作：
 下载官方编译好的二进制包并解压：  
@@ -83,6 +84,6 @@ tags: "Linux"
     /usr/local/mysql/bin/mysqladmin -u root password '密码'  
 
 ###六、参考链接：
-<http://jingyan.baidu.com/article/a378c9609eb652b3282830fd.html>  
-<http://blog.csdn.net/wendi_0506/article/details/39478369>  
-<http://blog.csdn.net/superchanon/article/details/8546254>  
+http://jingyan.baidu.com/article/a378c9609eb652b3282830fd.html  
+http://blog.csdn.net/wendi_0506/article/details/39478369  
+http://blog.csdn.net/superchanon/article/details/8546254  
