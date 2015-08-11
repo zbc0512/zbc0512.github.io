@@ -12,5 +12,6 @@ http://blog.zbc7.com
 3,Google 的Adsense广告，官网：https://www.google.com/adsense/login/zh_CN   
 
 ####联系方式
-联系方式：qq(727750999), email(zbc0512@163.com)  
+QQ: 727750999  
+E-mail: zbc0512@163.com  
 
