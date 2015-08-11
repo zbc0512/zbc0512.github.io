@@ -7,17 +7,17 @@ tags: ["Linux", "Python"]
 
 Linux下一般都有预装Python，但是版本都较低，有时需要安装相对较高的版本。  
 
-####下载
+###一、下载：
 首先，需要到官网下载所需要的Python版本：<https://www.python.org/downloads>  
 也可以执行如下命令直接下载，这里以Python-3.4.3.tgz为例：  
 
     wget https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tgz  
 
-####解压：  
+###二、解压：  
 
     tar -xzvf Python-3.4.3.tgz  
 
-####编译：  
+###三、编译：  
   在编译前先在/usr/local建一个文件夹python3（作为python的安装路径，以免覆盖老的版本）：  
 
     mkdir /usr/local/python3  
@@ -30,7 +30,7 @@ Linux下一般都有预装Python，但是版本都较低，有时需要安装相
 
     make  
 
-####安装：  
+###四、安装：  
 
     make install  
 
@@ -42,4 +42,5 @@ Linux下一般都有预装Python，但是版本都较低，有时需要安装相
 
     ln -s /usr/local/python3/bin/python3 /usr/bin/python  
 
-安装完成，输入python，可以看见当前python的版本信息。  
+###五、完成：
+输入python，可以看见当前python的版本信息。  
