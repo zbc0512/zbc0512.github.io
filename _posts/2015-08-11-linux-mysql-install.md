@@ -87,4 +87,4 @@ MySQL mirrors地址：<http://dev.mysql.com/downloads/mirrors.html>
 ###六、参考链接：
 <http://jingyan.baidu.com/article/a378c9609eb652b3282830fd.html>  
 <http://blog.csdn.net/wendi_0506/article/details/39478369>  
->http://blog.csdn.net/superchanon/article/details/8546254>  
+<http://blog.csdn.net/superchanon/article/details/8546254>  
