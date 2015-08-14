@@ -5,9 +5,9 @@ title: "Linux安装jdk"
 tags: ["Linux", "Java"]
 ---
 
-下载地址：  
+jdk下载地址：  
 
-    wget http://download.oracle.com/otn-pub/java/jdk/8u51-b16/jdk-8u51-linux-x64.rpm
+    http://www.oracle.com/technetwork/java/javase/downloads
 
 安装：  
 
