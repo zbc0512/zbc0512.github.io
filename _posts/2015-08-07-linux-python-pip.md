@@ -5,13 +5,10 @@ title: "Linux中Python3.4.3下pip不好使"
 tags: ["Linux", "Python"]
 ---
 
-从 Python 3.4 开始就已经自带了 pip 和 easy_install（setuptools 包带的命令）包管理命令  
-添加 python3.4 到环境变量，编辑 ~/.bash_profile，将：  
+###方法一：
+由于pip是针对python2使用的，因此在Python3里面需要使用pip3。  
 
-    PATH=$PATH:$HOME/bin
-    改为：
-    PATH=$PATH:$HOME/bin:/usr/local/python34/bin
+###方法二：
+也可以建立一个新的链接来指向pip3：  
 
-使 python3.4 环境变量生效：  
-
-    # . ~/.bash_profile
+    ln -s /usr/local/python-3.4.3/bin/pip3 /usr/bin/pip
