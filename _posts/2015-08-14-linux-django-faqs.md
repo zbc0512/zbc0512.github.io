@@ -13,7 +13,7 @@ tags: ["Linux", "Django"]
 
 错误信息如下：  
 
-        Traceback (most recent call last):
+    Traceback (most recent call last):
       File "/usr/local/python3/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 31, in <module>
         from pysqlite2 import dbapi2 as Database
     ImportError: No module named 'pysqlite2'
