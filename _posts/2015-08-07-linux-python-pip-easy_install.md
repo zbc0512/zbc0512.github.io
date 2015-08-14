@@ -5,6 +5,8 @@ title: "Linux中Python3.4.3下pip和easy_install不好使"
 tags: ["Linux", "Python"]
 ---
 
+之前在网上有看到一个修改环境变量的方法，尝试了一下，没有成功，于是便总结了如下方法：  
+
 ###pip
 ####方法一：
 由于pip是针对python2使用的，因此在Python3里面需要使用pip3。  
