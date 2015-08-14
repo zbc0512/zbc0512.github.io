@@ -12,3 +12,5 @@ tags: ["Linux", "Python"]
 也可以建立一个新的链接来指向pip3：  
 
     ln -s /usr/local/python-3.4.3/bin/pip3 /usr/bin/pip
+
+easy_install同理。
