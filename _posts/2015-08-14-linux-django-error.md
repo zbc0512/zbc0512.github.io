@@ -9,7 +9,7 @@ tags: ["Linux", "Django"]
 
 执行如下命令时报错：  
 
-    python manage.py runserver  
+    python manage.py runserver
 
 错误信息如下：  
 
