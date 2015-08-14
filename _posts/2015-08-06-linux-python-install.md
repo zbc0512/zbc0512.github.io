@@ -14,6 +14,7 @@ Linux下一般都有预装Python，但是版本都较低，有时需要安装相
     wget https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tgz  
 
 ###二、解压：  
+注意：由于是.tgz后缀的文件，参数选择是-xzvf，若是其他格式的压缩文件，参数会有不同。  
 
     tar -xzvf Python-3.4.3.tgz  
 
