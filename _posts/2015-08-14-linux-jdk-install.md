@@ -5,9 +5,7 @@ title: "Linux安装jdk"
 tags: ["Linux", "Java"]
 ---
 
-jdk下载地址：  
-
-    http://www.oracle.com/technetwork/java/javase/downloads
+jdk下载地址：<http://www.oracle.com/technetwork/java/javase/downloads>  
 
 安装：  
 
