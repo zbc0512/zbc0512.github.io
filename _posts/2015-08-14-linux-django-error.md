@@ -99,9 +99,16 @@ tags: ["Linux", "Django"]
     cd yum-3.4.3.tar.gz
     python yummain.py install yum
 
+修改/usr/bin/yum第一行为python_old  
+
+    vim /usr/bin/yum
+
+然后运行  
+
+    yum update
+
 参考：  
 centos安装和更新yum的方法：<http://blog.163.com/plawsh@126/blog/static/162925927201379566299>  
-
 
 
 
