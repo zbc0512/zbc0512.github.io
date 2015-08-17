@@ -78,10 +78,8 @@ tags: ["Linux", "Django"]
         raise ImproperlyConfigured("Error loading either pysqlite2 or sqlite3 modules (tried in that order): %s" % exc)
     django.core.exceptions.ImproperlyConfigured: Error loading either pysqlite2 or sqlite3 modules (tried in that order): No module named 'dbapi2'
 
-待解决...  
-
-原因：  
-需要安装sqlite-devel  
+解决：  
+1. 安装sqlite-devel  
 
     yum install sqlite-devel
 
@@ -92,25 +90,16 @@ tags: ["Linux", "Django"]
                                 ^
     SyntaxError: invalid syntax
 
-此时原因可能是python3和python2语法规则不同导致，更新yum到最新版本：
+由于python3和python2语法规则不同导致，修改/usr/bin/yum第一行：  
 
-    wget http://yum.baseurl.org/download/3.4/yum-3.4.3.tar.gz
-    tar -xvf yum-3.4.3.tar.gz
-    cd yum-3.4.3.tar.gz
-    python yummain.py install yum
+    #!/usr/bin/python_old
 
-修改/usr/bin/yum第一行为python_old  
+然后就可以安装sqlite-devel了。  
 
-    vim /usr/bin/yum
+2. 重新编译安装python：  
 
-然后运行  
+    ./configure --prefix=/usr/local/python-3.4.3
+    make
+    make install
 
-    yum update
-
-参考：  
-centos安装和更新yum的方法：<http://blog.163.com/plawsh@126/blog/static/162925927201379566299>  
-
-
-
-
-
+再次运行django，问题解决。
