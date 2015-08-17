@@ -79,7 +79,7 @@ tags: ["Linux", "Django"]
     django.core.exceptions.ImproperlyConfigured: Error loading either pysqlite2 or sqlite3 modules (tried in that order): No module named 'dbapi2'
 
 解决：  
-1. 安装sqlite-devel  
+1.安装sqlite-devel  
 
     yum install sqlite-devel
 
@@ -96,7 +96,7 @@ tags: ["Linux", "Django"]
 
 然后就可以安装sqlite-devel了。  
 
-2. 重新编译安装python：  
+2.重新编译安装python：  
 
     ./configure --prefix=/usr/local/python-3.4.3
     make
