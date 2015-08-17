@@ -1,8 +1,8 @@
 ---
 layout: post
-category: "django"
+category: ["linux", "django"]
 title: "Linux上启动Django之后，外部无法访问"
-tags: "Django"
+tags: ["Linux", "Django"]
 ---
 
 ####原因：  
