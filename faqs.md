@@ -22,9 +22,7 @@ Git查看、删除、重命名远程分支和tag: http://zengrong.net/post/1746.
 <!-- Blog Comments -->
 <div class="media">
   <!-- UY BEGIN -->
-  <div id="uyan_frame">
-  </div>
-  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1511840">
-  </script>
+  <div id="uyan_frame"></div>
+  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2054299"></script>
   <!-- UY END -->
 </div>
