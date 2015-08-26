@@ -5,7 +5,7 @@ title: "Java中的this的理解"
 tags: "Java"
 ---
 
-Java中的this表示对当前对象的调用。  
+Java中的this表示对“这个对象”或者“当前对象”的引用。  
 例如：  
 
     this.apple();
