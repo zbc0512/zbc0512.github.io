@@ -18,8 +18,8 @@ tags: "Linux"
 
 说明：本地网卡eth0负责连接vpn客户端，eth1负责与10.100.100.0网段服务器的连接。  
 目的：  
-1. vpn客户端能够成功的连接到vpn服务器上；  
-2. vpn服务器可以转发来自vpn客户端对10.100.100.0网段的请求。  
+1.vpn客户端能够成功的连接到vpn服务器上；  
+2.vpn服务器可以转发来自vpn客户端对10.100.100.0网段的请求。  
 检查是否支持：  
 
     # modprobe ppp-compress-18 && echo ok
@@ -31,7 +31,7 @@ tags: "Linux"
 
 上述两条均通过，才能安装pptp。否则就只能考虑openvpn。  
 ###二、安装
-1. Cent OS 7.0 默认集成了MPPE和PPP，以及iptables，因此下面检查也可以忽略：  
+1.Cent OS 7.0 默认集成了MPPE和PPP，以及iptables，因此下面检查也可以忽略：  
 
     # rpm -q ppp // 查询当前系统的ppp是否默认集成了，以及ppp的版本
 
@@ -40,7 +40,7 @@ tags: "Linux"
     # strings '/usr/sbin/pppd' |grep -i mppe | wc --lines
 
 如果以上命令输出为“0”则表示不支持；输出为“30”或更大的数字就表示支持，MPPE（Microsoft Point to Point Encryption，微软点对点加密）。  
-2. 安装pptpd
+2.安装pptpd
 
     # yum install pptpd
 
