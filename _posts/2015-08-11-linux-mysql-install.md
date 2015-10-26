@@ -71,9 +71,16 @@ MySQL mirrors地址：<http://dev.mysql.com/downloads/mirrors.html>
 重启系统，mysql就会自动启动了。检查是否启动：  
 
     netstat -anp|grep mysql
-    //显示如下：
+
+显示如下：  
+
     tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      27628/mysql
     unix  2      [ ACC ]     STREAM     LISTENING     204207 27628/mysqld        /tmp/mysql.sock
+
+如果不想重新启动系统，那就手动启动MySQL服务：  
+
+    service mysqld start
+
 ###五、其他配置：
 将/usr/local/mysql/bin/mysql加入环境变量中，在/etc/profile最后加入两行命令：
 
