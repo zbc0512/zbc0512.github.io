@@ -44,7 +44,7 @@ MySQL mirrors地址：<http://dev.mysql.com/downloads/mirrors.html>
 ###三、开始安装：
 安装数据库：
 
-    scripts/mysql_install_db --user=mysql --basedir=/opt/mysql/mysql --datadir=/data/mysqldb
+    scripts/mysql_install_db --user=mysql
 
 将mysql/目录下除了data/目录的所有文件，改回root用户所有，mysql用户只需作为mysql/data/目录下所有文件的所有者：
 
