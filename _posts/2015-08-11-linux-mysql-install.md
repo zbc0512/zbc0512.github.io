@@ -56,25 +56,25 @@ MySQL mirrors地址：<http://dev.mysql.com/downloads/mirrors.html>
 
     cp support-files/my-medium.cnf /etc/my.cnf
 
-首先需要将scripts/mysql.server服务脚本复制到/etc/init.d/，并重命名为mysql：  
+首先需要将scripts/mysql.server服务脚本复制到/etc/init.d/，并重命名为mysqld：  
 
-    cp support-files/mysql.server /etc/init.d/mysql
+    cp support-files/mysql.server /etc/init.d/mysqld
 
 通过chkconfig命令将mysql服务加入到自启动服务项中，注意服务名称mysql就是我们将mysql.server复制到/etc/init.d/时重命名的名称：  
 
-    chkconfig --add mysql
+    chkconfig --add mysqld
 
 查看是否添加成功：  
 
-    chkconfig --list mysql
+    chkconfig --list mysqld
 
-重启系统，mysql就会自动启动了。检查是否启动：  
+重启系统，mysqld就会自动启动了。检查是否启动：  
 
-    netstat -anp|grep mysql
+    netstat -anp|grep mysqld
 
 显示如下：  
 
-    tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      27628/mysql
+    tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      27628/mysqld
     unix  2      [ ACC ]     STREAM     LISTENING     204207 27628/mysqld        /tmp/mysql.sock
 
 如果不想重新启动系统，那就手动启动MySQL服务：  
