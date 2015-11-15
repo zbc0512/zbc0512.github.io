@@ -2,7 +2,7 @@
 layout: post
 category: "eclipse"
 title: "Xms Xmx PermSize MaxPermSize 区别"
-tags: "eclipse"
+tags: "Eclipse"
 ---
 Eclipse崩溃，错误提示：
 MyEclipse has detected that less than 5% of the 64MB of Perm 
