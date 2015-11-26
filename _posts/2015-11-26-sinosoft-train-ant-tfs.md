@@ -22,11 +22,7 @@ Apache Ant,是一个将软件编译、测试、部署等步骤联系在一起加
 
 ###2、Hello World
 
-Ant的构件文件是基于XML编写的，默认名称为build.xml，执行ant命令默认寻找build.xml；  
-也可以自己指定这个文件,例如：  
-
-    ant -f a.xml
-
+Ant的构件文件是基于XML编写的，默认名称为build.xml，执行ant命令默认寻找build.xml，也可以自己指定这个文件。  
 举个栗子，在a.xml中添加如下代码：  
 
     <?xml version="1.0"?>
