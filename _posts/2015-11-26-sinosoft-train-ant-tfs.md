@@ -81,14 +81,16 @@ project元素是Ant构件文件的根元素，Ant构件文件至少应该包含�
 
     <property file=” build.properties”/>
 
+###4、一些常用任务
 
+####1.copy
 
+####2.delete
 
+####3.mkdir
 
+####4.move
 
-
-
-
-
+####5.echo
 
 
