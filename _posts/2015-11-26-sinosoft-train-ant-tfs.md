@@ -37,6 +37,8 @@ Ant的构件文件是基于XML编写的，默认名称为build.xml，执行ant�
     ant -f a.xml hello
 
 意思就是指定Ant的构建文件为a.xml，执行名称为hello这个target。  
+运行结果如下图：  
+![Hello World](/images/ant-001.jpg)  
 也可以指定默认的target，只需做如下修改：  
 
     <?xml version="1.0"?>
