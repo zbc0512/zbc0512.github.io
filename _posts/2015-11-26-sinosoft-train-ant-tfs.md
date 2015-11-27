@@ -97,16 +97,21 @@ project元素是Ant构件文件的根元素，Ant构件文件至少应该包含�
 
 ###1、Ant的准备工作
 ####1.将prpall_configs.rar中的prpall_configs文件夹解压到到要打包的项目根目录下。
+![prpall_configs](/images/ant-002.jpg)  
 ####2.修改..\prpall_configs\build.xml（包括起止版本号、Visual Studio本地路径）
+![build.xml](/images/ant-003.jpg)  
 ####3.修改..\prpall_configs\build\java\build\MakeWebappJar.java（包括服务器项目路径、起止版本号、本地项目路径）
+![MakeWebappJar.java](/images/ant-004.jpg)  
 
 ###2、执行ant
-打好的增量包可以在如下目录中找到：  
+打好的增量包及升级的文件列表可以在如下目录中找到：  
 
     \prpall_configs\build\webapp_jar_dir
 
+![webapp_jar_dir](/images/ant-005.jpg)  
 ####1、用压缩工具压缩pages中的js文件。  
 ####2、用ftp工具拖到服务器对应的目录下。  
+![ftp](/images/ant-006.jpg)  
 ####3、重启服务。  
 
 ##四、注意
