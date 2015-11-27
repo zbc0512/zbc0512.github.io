@@ -104,7 +104,7 @@ project元素是Ant构件文件的根元素，Ant构件文件至少应该包含�
 ![MakeWebappJar.java](/images/ant-004.jpg)  
 
 ###2、执行ant
-打好的增量包及升级的文件列表可以在如下目录中找到：  
+在如下目录中找到打好的增量包、包含升级文件清单的txt文件：  
 
     \prpall_configs\build\webapp_jar_dir
 
