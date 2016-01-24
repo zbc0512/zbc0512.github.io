@@ -34,7 +34,9 @@ tags: [GAE,Tomcat,Eclipse]
 
     Could not resolve XML resource [null] with public ID [-//Oracle Corporation//DTD Web Application 2.3//EN], system ID [http://java.sun.com/dtd/web-app_2_3.dtd] and base URI [file:/D:/Program/apache-tomcat-8.0.26/webapps_prpall/appengine-try-java-master/WEB-INF/web.xml] to a known, local entity.
 
-解决办法：修改conf/context.xml  
+解决办法：  
+a. 在Servers窗口中双击Tomcat，勾选Serve modules without publishing；  
+b. 修改conf/context.xml，如下：  
 
     <Context xmlBlockExternal="false">
 
@@ -44,4 +46,5 @@ tags: [GAE,Tomcat,Eclipse]
 
     [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'source' to 'org.eclipse.jst.jee.server:appengine-try-java-master' did not find a matching property.
 
-解决办法：在Servers窗口中双击Tomcat，打开的窗口中找到并点击Open launch configuration，在Source中添加该project。  
+解决办法：  
+在Servers窗口中双击Tomcat，打开的窗口中找到并点击Open launch configuration，在Source中添加该project。  
