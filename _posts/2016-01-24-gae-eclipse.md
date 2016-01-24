@@ -36,7 +36,9 @@ tags: [GAE,Tomcat,Eclipse]
 
 解决办法：修改conf/context.xml  
 
-    <Context  xmlBlockExternal="false">
+    <Context xmlBlockExternal="false">
+
+参考：<http://dannyzhou.github.io/blogs//2015/10/11/split_web_xml>  
 
 ####2) 无法进入调试，并警告:  
 
