@@ -95,4 +95,4 @@ Distribute会根据这个环境变量是否存在，判断虚拟运行环境的�
 
     $ rmvirtualenv newenv
 
-声明：以下内容根据《Python开发实战》进行整理。
+声明：以上内容整理自《Python开发实战》。
