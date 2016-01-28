@@ -1,11 +1,9 @@
 ---
 layout: post
 category: "python"
-title: "利用virtualenv安装不同版本的Python"
+title: "virtualenv和virtualenvwrapper虚拟运行环境的使用"
 tags: "Python"
 ---
-
-声明：以下内容根据《Python开发实战》进行整理。
 
 ###1、virtualenv
 
@@ -97,3 +95,4 @@ Distribute会根据这个环境变量是否存在，判断虚拟运行环境的�
 
     $ rmvirtualenv newenv
 
+声明：以下内容根据《Python开发实战》进行整理。
