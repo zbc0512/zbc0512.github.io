@@ -9,7 +9,7 @@ tags: "Maven"
 
 注：该帮助文档中有如下命令，来生成maven项目：
 
-    mvn archetype:create -DgroupId=oschina -DartifactId=simple -DpackageName=net.oschina.simple  -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+    mvn archetype:create -DgroupId=oschina -DartifactId=simple -DpackageName=net.oschina.simple -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 
 但在我的电脑上使用上述命令生成maven项目时，报如下错误：
 
