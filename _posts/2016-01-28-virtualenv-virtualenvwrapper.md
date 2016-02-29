@@ -52,6 +52,7 @@ Distribute会根据这个环境变量是否存在，判断虚拟运行环境的�
 ### 2、virtualenvwrapper
 
 接着我们介绍一种比virtualenv更容易使用的工具——virtualenvwrapper。virtualenv需要每次使用source命令导入虚拟运行环境信息，这一点非常麻烦，另外开发者还有可能忘记虚拟环境目录的建立位置。virtualenvwrapper这一命令行工具就是通过对virtualenv进行二次封装，解决了上述种种问题。  
+
 #### 安装virtualenvwrapper
 
     $ pip install virtualenvwrapper

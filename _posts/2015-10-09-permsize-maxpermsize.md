@@ -12,7 +12,7 @@ paramters to increase this memory.   Failure to do so can result in
 data loss. The recommended Eclipse memory parameters are: 
 eclipse.exe -vmargs -Xms128M -Xmx512M -XX:PermSize=64M -XX:MaxPermSize=128M
  
-###1.参数的含义  
+### 1.参数的含义  
 -vmargs -Xms128M -Xmx512M -XX:PermSize=64M -XX:MaxPermSize=128M
 -vmargs 说明后面是VM的参数，所以后面的其实都是JVM的参数了
 -Xms128m JVM初始分配的堆内存
@@ -22,7 +22,7 @@ eclipse.exe -vmargs -Xms128M -Xmx512M -XX:PermSize=64M -XX:MaxPermSize=128M
 
 我们首先了解一下JVM内存管理的机制，然后再解释每个参数代表的含义。
 
-####1)堆(Heap)和非堆(Non-heap)内存  
+#### 1)堆(Heap)和非堆(Non-heap)内存  
 
  按照官方的说法：“Java 虚拟机具有一个堆，堆是运行时数据区域，所有类实例和数组的内存均从此处分配。堆是在 Java 虚拟机启动时创建的。”“在JVM中堆之外的内存称为非堆内存(Non-heap memory)”。
  可以看出JVM主要管理两种类型的内存：堆和非堆。简单来说堆就是Java代码可及的内存，是留给开发人员使用的；非堆就是JVM留给自己用的，
@@ -45,18 +45,18 @@ XX:MaxPermSize设置过小会导致java.lang.OutOfMemoryError: PermGen space 就
 （2）GC(Garbage Collection)不会在主程序运行期对PermGen space进行清理，所以如果你的APP会LOAD很多CLASS 的话,就很可能出现PermGen space错误。
   这种错误常见在web服务器对JSP进行pre compile的时候。  
 
-####2)JVM内存限制(最大值)  
+#### 2)JVM内存限制(最大值)  
 
  首先JVM内存限制于实际的最大物理内存，假设物理内存无限大的话，JVM内存的最大值跟操作系统有很大的关系。简单的说就32位处理器虽然可控内存空间有4GB,但是具体的操作系统会给一个限制，
  这个限制一般是2GB-3GB（一般来说Windows系统下为1.5G-2G，Linux系统下为2G-3G），而64bit以上的处理器就不会有限制了。  
 
-###2. 为什么有的机器我将-Xmx和-XX:MaxPermSize都设置为512M之后Eclipse可以启动，而有些机器无法启动？  
+### 2. 为什么有的机器我将-Xmx和-XX:MaxPermSize都设置为512M之后Eclipse可以启动，而有些机器无法启动？  
  通过上面对JVM内存管理的介绍我们已经了解到JVM内存包含两种：堆内存和非堆内存，另外JVM最大内存首先取决于实际的物理内存和操作系统。所以说设置VM参数导致程序无法启动主要有以下几种原因：  
 1) 参数中-Xms的值大于-Xmx，或者-XX:PermSize的值大于-XX:MaxPermSize；  
 2) -Xmx的值和-XX:MaxPermSize的总和超过了JVM内存的最大限制，比如当前操作系统最大内存限制，或者实际的物理内存等等。说到实际物理内存这里需要说明一点的是，
  如果你的内存是1024MB，但实际系统中用到的并不可能是1024MB，因为有一部分被硬件占用了。  
 
-###3. 为何将上面的参数写入到eclipse.ini文件Eclipse没有执行对应的设置？  
+### 3. 为何将上面的参数写入到eclipse.ini文件Eclipse没有执行对应的设置？  
  那为什么同样的参数在快捷方式或者命令行中有效而在eclipse.ini文件中是无效的呢？这是因为我们没有遵守eclipse.ini文件的设置规则：  
 参数形如“项 值”这种形式，中间有空格的需要换行书写，如果值中有空格的需要用双引号包括起来。比如我们使用-vm C:/Java/jre1.6.0/bin/javaw.exe参数设置虚拟机，
 在eclipse.ini文件中要写成这样：  
@@ -83,14 +83,14 @@ XX:MaxPermSize设置过小会导致java.lang.OutOfMemoryError: PermGen space 就
 其中–launcher.XXMaxPermSize（注意最前面是两个连接线）跟-XX:MaxPermSize参数的含义基本是一样的，我觉得唯一的区别就是前者是eclipse.exe启动的时候设置的参数，
 而后者是eclipse所使用的JVM中的参数。其实二者设置一个就可以了，所以这里可以把–launcher.XXMaxPermSize和下一行使用#注释掉。  
 
-###4. 其他的启动参数。  
+### 4. 其他的启动参数。  
 如果你有一个双核的CPU，也许可以尝试这个参数:  
 
     -XX:+UseParallelGC
 
 让GC可以更快的执行。（只是JDK 5里对GC新增加的参数）
 
-###补充：  
+### 补充：  
 　　如果你的WEB APP下都用了大量的第三方jar，其大小超过了服务器jvm默认的大小，那么就会产生内存益出问题了。
 解决方法： 设置MaxPermSize大小 
 可以在myelipse里选中相应的服务器比如tomcat5，展开里面的JDK子项页面，来增加服务器启动的JVM参数设置：  
@@ -104,7 +104,7 @@ XX:MaxPermSize设置过小会导致java.lang.OutOfMemoryError: PermGen space 就
 或者手动设置MaxPermSize大小,比如tomcat，修改TOMCAT_HOME/bin/catalina.bat，在echo "Using CATALINA_BASE: $CATALINA_BASE"上面加入以下行： 
 JAVA_OPTS="-server -XX:PermSize=64M -XX:MaxPermSize=128m  
 
-###建议：  
+### 建议：  
 将相同的第三方jar文件移置到tomcat/shared/lib目录下，这样可以减少jar 文档重复占用内存
 
 参考：<http://www.cnblogs.com/mingforyou/archive/2012/03/03/2378143.html>

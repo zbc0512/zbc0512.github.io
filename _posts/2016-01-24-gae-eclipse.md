@@ -8,7 +8,7 @@ tags: [GAE,Tomcat,Eclipse]
 这两天在尝试使用Google的GAE，参照Google提供的[App Engine Docs](https://cloud.google.com/appengine/docs)搭建本地的开发环境。  
 学到了一些知识，也遇到了一些问题，这里就做一个简单的总结：  
 
-###1、maven
+### 1、maven
 首先，[maven](http://maven.apache.org)之前也有接触过，为了方便此项目的使用，这里就记录一些命令吧。  
 
     $ mvn -v --查看当前mvn的版本
@@ -28,9 +28,9 @@ tags: [GAE,Tomcat,Eclipse]
 
 注：version需要符合一定的格式，对应的正则表达式：'^(?:^(?!-)[a-z\d\-]{0,62}[a-z\d]$)$'。  
 
-###2、Eclipse部署Tomcat问题
+### 2、Eclipse部署Tomcat问题
 
-####1) 启服务报java.io.FileNotFoundException:
+#### 1) 启服务报java.io.FileNotFoundException:
 
     Could not resolve XML resource [null] with public ID [-//Oracle Corporation//DTD Web Application 2.3//EN], system ID [http://java.sun.com/dtd/web-app_2_3.dtd] and base URI [file:/D:/Program/apache-tomcat-8.0.26/webapps_prpall/appengine-try-java-master/WEB-INF/web.xml] to a known, local entity.
 
@@ -42,7 +42,7 @@ b. 修改conf/context.xml，如下：
 
 参考：<http://dannyzhou.github.io/blogs//2015/10/11/split_web_xml>  
 
-####2) 无法进入调试，并警告:  
+#### 2) 无法进入调试，并警告:  
 
     [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'source' to 'org.eclipse.jst.jee.server:appengine-try-java-master' did not find a matching property.
 

@@ -7,16 +7,16 @@ tags: ["Linux", "Python"]
 
 之前在网上有看到一个修改环境变量的方法，尝试了一下，没有成功，于是便总结了如下方法：  
 
-###pip
-####方法一：
+### pip
+#### 方法一：
 由于pip是针对python2使用的，因此在Python3里面需要使用pip3。  
 
-####方法二：
+#### 方法二：
 也可以建立一个新的链接来指向pip3：  
 
     ln -s /usr/local/python-3.4.3/bin/pip3 /usr/bin/pip
 
-###easy_install同理：
+### easy_install同理：
 如果提示如下信息：  
 
     ln: creating symbolic link `/usr/bin/easy_install': File exists

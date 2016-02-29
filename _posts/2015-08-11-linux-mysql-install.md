@@ -5,13 +5,13 @@ title: "Linux下安装mysql"
 tags: "Linux"
 ---
 
-####linux安装mysql服务分两种安装方法：
+#### linux安装mysql服务分两种安装方法：
 1. 源码安装，优点是安装包比较小，只有十多M，缺点是安装依赖的库多，安装编译时间长，安装步骤复杂容易出错；  
 2. 使用官方编译好的二进制文件安装，优点是安装速度快，安装步骤简单，缺点是安装包很大，300M左右。以下介绍linux使用官方编译好的二进制包安装mysql。  
 
 MySQL mirrors地址：<http://dev.mysql.com/downloads/mirrors.html>  
 
-###一、准备工作：
+### 一、准备工作：
 下载官方编译好的二进制包并解压：  
 
     wget ftp://ftp.jaist.ac.jp/pub/mysql/Downloads/MySQL-6.0/mysql-6.0.11-alpha-linux-x86_64-glibc23.tar.gz
@@ -26,7 +26,7 @@ MySQL mirrors地址：<http://dev.mysql.com/downloads/mirrors.html>
     cp mysql-6.0.11-alpha-linux-x86_64-glibc23 /usr/local/
     ln -s mysql-6.0.11-alpha-linux-x86_64-glibc23 mysql
 
-###二、用户和组：
+### 二、用户和组：
 添加系统mysql组和mysql用户：  
 
     groupadd mysql
@@ -41,7 +41,7 @@ MySQL mirrors地址：<http://dev.mysql.com/downloads/mirrors.html>
     chgrp -R mysql .
     chown -R mysql:mysql .
 
-###三、开始安装：
+### 三、开始安装：
 安装数据库：
 
     scripts/mysql_install_db --user=mysql
@@ -51,7 +51,7 @@ MySQL mirrors地址：<http://dev.mysql.com/downloads/mirrors.html>
     chown -R root .
     chown -R mysql data
 
-###四、开机启动：
+### 四、开机启动：
 复制mysql配置文件：
 
     cp support-files/my-medium.cnf /etc/my.cnf
@@ -81,7 +81,7 @@ MySQL mirrors地址：<http://dev.mysql.com/downloads/mirrors.html>
 
     service mysqld start
 
-###五、其他配置：
+### 五、其他配置：
 将/usr/local/mysql/bin/mysql加入环境变量中，在/etc/profile最后加入两行命令：
 
     MYSQL_HOME=/usr/local/mysql
@@ -91,7 +91,7 @@ MySQL mirrors地址：<http://dev.mysql.com/downloads/mirrors.html>
 
     /usr/local/mysql/bin/mysqladmin -u root password '密码'
 
-###六、参考链接：
+### 六、参考链接：
 <http://jingyan.baidu.com/article/a378c9609eb652b3282830fd.html>  
 <http://blog.csdn.net/wendi_0506/article/details/39478369>  
 <http://blog.csdn.net/superchanon/article/details/8546254>  

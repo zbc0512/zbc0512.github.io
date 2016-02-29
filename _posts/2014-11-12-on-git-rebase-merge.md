@@ -4,7 +4,7 @@ category: "git"
 title: "Git的Merge和Rebase"
 tags: ["git"]
 ---
-####一、特定分支下Rebase
+#### 一、特定分支下Rebase
     git branch//确认在master分支下  
     *master  
     git pull  
@@ -16,7 +16,7 @@ tags: ["git"]
 
 参考：http://www.cnblogs.com/sinojelly/archive/2011/08/07/2130172.html  
 
-####二、把B库merge到A库来
+#### 二、把B库merge到A库来
     git clone git@git.abc.com:user/space/A.git //准备A库代码  
     cd A  
     git branch //确保在master分支下  
@@ -35,7 +35,7 @@ tags: ["git"]
     git commit  //测试OK再commit  
     git push origin master //Push合并更新到A库远端  
 
-####三、其它可能用到的命令
+#### 三、其它可能用到的命令
     git clean -i: clean untracked files  
     git remote //show branches  
     git remote -v //show branches details  
