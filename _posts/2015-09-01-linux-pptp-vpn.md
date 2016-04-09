@@ -6,6 +6,7 @@ tags: "Linux"
 ---
 
 在网上找了好多资料，写的都不尽相同，也不是很详尽，所以自己重新整理了一下。  
+
 ### 一、环境
 操作系统：CentOS 7.0 64位  
 本地网卡：  
@@ -30,6 +31,7 @@ tags: "Linux"
     cat: /dev/net/tun: File descriptor in bad state
 
 上述两条均通过，才能安装pptp。否则就只能考虑openvpn。  
+
 ### 二、安装
 1.Cent OS 7.0 默认集成了MPPE和PPP，以及iptables，因此下面检查也可以忽略：  
 
@@ -97,6 +99,7 @@ tags: "Linux"
 然后编辑rc.local，并把上面的转发规则写到文件末尾。  
 
 ### 五、启动
+
 #### 1. 启动pptpd
 
     /etc/init.d/pptpd start
