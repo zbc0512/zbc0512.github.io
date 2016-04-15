@@ -1,8 +1,8 @@
 ---
 layout: post
-category: [ant,TFS]
+category: "ant"
 title: "TFS下的打包发布"
-tags: [Ant,TFS]
+tags: "Ant"
 ---
 
 ## 一、下载代码
