@@ -15,8 +15,8 @@ tags: "GitHub"
     name = zbc
     email = zbc0512@163.com
     [http]
-    proxy = http://proxy.piccnet.com.cn:3128
+    proxy = http://host:port
     [https]
-    proxy = http://proxy.piccnet.com.cn:3128
+    proxy = http://host:port
 
 修改代理部分，重启github客户端，发现代理已经可以使用，可以正常push代码了
