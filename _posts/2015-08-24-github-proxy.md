@@ -5,11 +5,11 @@ title: "GitHub代理设置"
 tags: "GitHub"
 ---
 
-在gitshell中输入  
+在gitshell中输入如下命令：  
 
     cd ~
 
-发现home路径是C:\Users\z，在C:\Users\z目录下找到文件.gitconfig，里面内容如下  
+发现home路径是C:\Users\z，在C:\Users\z目录下找到文件.gitconfig，里面内容如下：  
 
     [user]
     name = zbc
