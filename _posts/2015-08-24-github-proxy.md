@@ -20,3 +20,5 @@ tags: "GitHub"
     proxy = http://host:port
 
 修改代理部分，重启github客户端，发现代理已经可以使用，可以正常push代码了
+
+<font color="#F00">注：此方法为GitHub修改代理的通用方法，与任何公司内网无关，在此声明，敬请知晓！</font>
