@@ -14,17 +14,17 @@ MySQL mirrors地址：<http://dev.mysql.com/downloads/mirrors.html>
 ### 一、准备工作：
 下载官方编译好的二进制包并解压：  
 
-    wget ftp://ftp.jaist.ac.jp/pub/mysql/Downloads/MySQL-6.0/mysql-6.0.11-alpha-linux-x86_64-glibc23.tar.gz
-    tar -xzvf mysql-6.0.11-alpha-linux-x86_64-glibc23.tar.gz
+    wget ftp://ftp.jaist.ac.jp/pub/mysql/Downloads/MySQL-5.7/mysql-5.7.12-linux-glibc2.5-x86_64.tar.gz
+    tar -zxvf mysql-5.7.12-linux-glibc2.5-x86_64.tar.gz
 
 复制解压后的mysql目录到系统的本地软件目录：  
 
-    cp mysql-6.0.11-alpha-linux-x86_64-glibc23 /usr/local/mysql -r
+    cp mysql-5.7.12-linux-glibc2.5-x86_64 /usr/local/mysql -r
 
 注意：此处建议用如下方法，使用软链过去，不要直接包文件复制，便于系统安装多个版本的mysql：  
 
-    cp mysql-6.0.11-alpha-linux-x86_64-glibc23 /usr/local/
-    ln -s mysql-6.0.11-alpha-linux-x86_64-glibc23 mysql
+    cp mysql-5.7.12-linux-glibc2.5-x86_64 /usr/local/
+    ln -s mysql-5.7.12-linux-glibc2.5-x86_64 mysql
 
 ### 二、用户和组：
 添加系统mysql组和mysql用户：  
