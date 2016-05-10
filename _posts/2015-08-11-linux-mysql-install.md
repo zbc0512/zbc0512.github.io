@@ -91,9 +91,34 @@ MySQL mirrors地址：<http://dev.mysql.com/downloads/mirrors.html>
 
     /usr/local/mysql/bin/mysqladmin -u root password '密码'
 
-### 注意：
+### 附录A：
 
-MySQL 5.7后已经不支持以上安装方式，不过方法都类似，以下是MySQL 5.7后，官方提供的安装方式：  
+MySQL 5.6官方提供的安装步骤：  
+
+    # Preconfiguration setup
+    shell> groupadd mysql
+    shell> useradd -r -g mysql -s /bin/false mysql
+    # Beginning of source-build specific instructions
+    shell> tar zxvf mysql-VERSION.tar.gz
+    shell> cd mysql-VERSION
+    shell> cmake .
+    shell> make
+    shell> make install
+    # End of source-build specific instructions
+    # Postinstallation setup
+    shell> cd /usr/local/mysql
+    shell> chown -R mysql .
+    shell> chgrp -R mysql .
+    shell> scripts/mysql_install_db --user=mysql
+    shell> chown -R root .
+    shell> chown -R mysql data
+    shell> bin/mysqld_safe --user=mysql &
+    # Next command is optional
+    shell> cp support-files/mysql.server /etc/init.d/mysql.server
+
+### 附录B：
+
+MySQL 5.7后安装步骤稍有不同，不过都差不太多，以下是官方提供的安装步骤：  
 
     # Preconfiguration setup
     shell> groupadd mysql
