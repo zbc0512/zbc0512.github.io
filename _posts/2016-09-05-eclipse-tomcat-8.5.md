@@ -7,13 +7,13 @@ tags: ["Eclipse", "Tomcat"]
 
 首先先进入到tomcat的lib目录。  
 
-###方法一：
+### 方法一：
 
 找到catalina.jar，打开catalina.jar/org/apache/catalina/util/ServerInfo.properties文件，修改server.info的参数：  
 
     server.info=Apache Tomcat/8.0.54
 
-###方法二：
+### 方法二：
 
 在lib目录下创建如下目录：  
 
