@@ -5,7 +5,7 @@ title: "在Eclipse中配置Tomcat8.5.x"
 tags: ["Eclipse", "Tomcat"]
 ---
 
-因为eclipse中配置tomcat的时候，eclipse会去获取tomcat的版本，[Tomcat 8.5.x 分支来自于Tomcat 9.0.0 M4](http://tomcat.apache.org/tomcat-8.5-doc/changelog.html)，所以我们只要做个伪装即可。  
+因为eclipse中配置tomcat的时候，eclipse会去获取tomcat的版本（[Tomcat 8.5.x 分支来自于Tomcat 9.0.0 M4](http://tomcat.apache.org/tomcat-8.5-doc/changelog.html)），所以我们只要做个伪装骗过eclipse即可。  
 
 首先先进入到tomcat的lib目录。  
 
