@@ -52,7 +52,7 @@ tags: "Spring"
         }
     }
 
-##### 附录：cronExpression表达式  
+##### cronExpression表达式  
 
 | 字段 | 允许值 | 允许的特殊字符 |
 | --- | --- | --- |
