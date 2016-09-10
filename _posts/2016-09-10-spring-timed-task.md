@@ -5,7 +5,7 @@ title: "简单的Spring定时任务"
 tags: "Spring"
 ---
 
-首先配置web.xml  
+##### web.xml  
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
@@ -17,7 +17,7 @@ tags: "Spring"
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
-接下来是Spring的配置  
+##### applicationContext.xml  
 
     <?xml version="1.0" encoding="UTF-8"?>
     <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -38,13 +38,13 @@ tags: "Spring"
     
     </beans>
 
-测试定时任务
+##### TestTimedTask.java
 
     import org.springframework.scheduling.annotation.Scheduled;
     import org.springframework.stereotype.Component;
     
     @Component
-    public class TimedTask {
+    public class TestTimedTask {
         // 周一至周五，9:00到17:00之间，每5分钟执行一次
         @Scheduled(cron = "0 0/5 9-17 * * MON-FRI")
         public void testTimedTask() {
@@ -52,7 +52,7 @@ tags: "Spring"
         }
     }
 
-附录：cronExpression表达式  
+##### 附录：cronExpression表达式  
 
 | 字段 | 允许值 | 允许的特殊字符 |
 | --- | --- | --- |
@@ -64,7 +64,7 @@ tags: "Spring"
 | 星期 | 1-7 或者 SUN-SAT | , - * / L C # |
 | 年（可选） | 留空, 1970-2099 | , - * / |
 
-如上所示：  
+##### 特殊字符解释：  
 
 “,”字符被用来指定另外的值。如：“MON,WED,FRI”在星期域里表示”星期一、星期三、星期五”。  
 
