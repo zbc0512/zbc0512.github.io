@@ -7,9 +7,15 @@ tags: "MySQL"
 
 #### 1、设置最大连接数：  
 
-    方法一、set GLOBAL max_connections=连接数;
-    
-    方法二、修改/etc/my.cnf中的max_connections
+##### 方法一、使用mysql命令：  
+
+    查看最大连接数：
+    show variables like 'max_connections';
+
+    设置最大连接数：
+    set GLOBAL max_connections=连接数;
+
+##### 方法二、修改/etc/my.cnf中的max_connections
 
 #### 2、show status：  
 
