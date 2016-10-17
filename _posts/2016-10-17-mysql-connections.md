@@ -12,7 +12,7 @@ tags: "MySQL"
     查看最大连接数：
     show variables like 'max_connections';
 
-    查看响应的最大连接数：
+    查看响应的最大连接数：
     show global status like 'Max_used_connections';
 
     设置最大连接数：
