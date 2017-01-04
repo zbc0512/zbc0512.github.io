@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "linux"
-title: "centos7.0安装搭建pptp vpn服务"
+title: "CentOS 7.0安装搭建pptp vpn服务"
 tags: "Linux"
 ---
 
