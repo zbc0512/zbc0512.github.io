@@ -13,9 +13,9 @@ paginate_path: "page:num"
 domain: zbc.io
 title: zbc.io
 description: 临渊羡鱼，不如退而结网
-author: Zhang Bai Cheng
+author: Zhang BaiCheng
 email: zbc0512@163.com
-github: zbcblog
+github: zbc0512
 
 config:
   js_dir:
