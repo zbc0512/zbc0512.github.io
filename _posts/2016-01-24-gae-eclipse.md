@@ -32,7 +32,7 @@ tags: [GAE,Tomcat,Eclipse]
 
 #### 1) 启服务报java.io.FileNotFoundException:
 
-    Could not resolve XML resource [null] with public ID [-//Oracle Corporation//DTD Web Application 2.3//EN], system ID [http://java.sun.com/dtd/web-app_2_3.dtd] and base URI [file:/D:/Program/apache-tomcat-8.0.26/webapps_prpall/appengine-try-java-master/WEB-INF/web.xml] to a known, local entity.
+    Could not resolve XML resource [null] with public ID [-//Oracle Corporation//DTD Web Application 2.3//EN], system ID [http://java.sun.com/dtd/web-app_2_3.dtd] and base URI [file:/D:/Program/apache-tomcat-8.0.26/webapps/appengine-try-java-master/WEB-INF/web.xml] to a known, local entity.
 
 解决办法：  
 a. 在Servers窗口中双击Tomcat，勾选Serve modules without publishing；  
